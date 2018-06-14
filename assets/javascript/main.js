@@ -28,6 +28,7 @@ var deleteButton = document.querySelector( 'li button' );
  }
 
  //naujas komentaras
+ //TEST
 
 
 
