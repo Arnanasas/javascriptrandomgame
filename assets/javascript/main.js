@@ -27,6 +27,8 @@ var deleteButton = document.querySelector( 'li button' );
    var newButtonInList = document.querySelector('li:last-of-type').appendChild(newButton);
  }
 
+ //naujas komentaras
+
 
 
  function finishButton() {
