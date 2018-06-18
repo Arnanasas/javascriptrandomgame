@@ -7,23 +7,27 @@
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet">
+  <link rel="stylesheet" href="assets/icons/style.css">
 </head>
 <body>
   <div class="container">
     <header>
+      <p class="time_today"></p>
       <h1>My To Do List</h1>
-      <div class="input-container">
-        <input type="text" class="input" placeholder="What's on your mind?">
-        <button class="addButton">Add</button>
-      </div>
+
     </header>
     <main>
       <ul class="to-do-list">
-        <!-- <li> <button>X</button> </li> -->
-
       </ul>
     </main>
+    <footer>
+      <div class="input-container">
+        <input type="text" class="input" placeholder="What's on your mind?">
+        <button data-action="add" class="icon-plus"></button>
+      </div>
+    </footer>
   </div>
-  <script src="assets/javascript/main.js"></script>
+  <script src="assets/javascript/mainer.js"></script>
 </body>
 </html>

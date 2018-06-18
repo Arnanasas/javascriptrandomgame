@@ -1,34 +1,98 @@
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* IMPORTANT */
 .container {
   max-width: 600px;
   padding:0 20px;
   margin: 0 auto;
+  /* PADARYTI JOG UZDUOTYS EITU SCROLL'as */
 }
+
+p {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  text-align: left;
+  margin: 0 auto;
+  margin-left: 15px;
+  color: white;
+  font-size: 15px;
+  opacity: 0.6;
+}
+p:hover {
+
+}
+
 header {
-  background: red;
+  background: #46529d;
   text-align: center;
   padding: 15px 0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
+
+footer {
+  background: #46529d;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
 h1 {
   color: #fff;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
   text-align: center;
+  font-size: 40px;
 }
+
 input {
   width: 70%;
   padding: 10px;
 }
-header button {
-  width: 20%;
-  background: grey;
-  color: darkgrey;
+
+/* BUTTON STYLES */
+footer button {
+  width: 7%;
+  background: #2ebaee;
+  color: #fff;
   padding: 10px;
+  margin-left: 10px;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  opacity: 0.5;
+  transition: 0.3s;
 }
+
+footer button:hover {
+  opacity: 1
+}
+
+/* ////// */
 ul {
   padding: 0;
+  margin-top: 0;
 }
 ul li {
+  position: relative;
   display: flex;
   padding: 15px 25px;
+  margin: 10px 0;
   align-items: center;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  border: 2px solid #2ebaee;
+  border-radius: 25px;
 }
 ul li.editing-now {
   border: 2px solid red;
@@ -39,24 +103,46 @@ ul li button {
   font-size: 28px;
   margin-left: auto;
   font-weight: bold;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+ul li button:hover {
+  color: red;
+  opacity: 1;
 }
 ul li.completed {
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
   color: #212121;
-  background: limegreen;
+  background: #70f96d;
+}
+.lists: hover {
+  text-decoration: line-through;
 }
 .to-do-list i {
   margin-right: 15px;
   display: none;
 }
 li:nth-child(even) {
-  background-color: #eee;
+  background-color: #fff;
+}
+li:nth-child(odd) {
+  background-color: #fff;
 }
 .to-do-list li.completed i {
   display: block;
 }
 ul li:hover {
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
   color: #212121;
   background: darkgrey;
+}
+
+.innerLi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 12px;
+  color: grey;
+  opacity: 0.5;
+  font-size: 10px;
 }
